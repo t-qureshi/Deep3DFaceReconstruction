@@ -81,15 +81,17 @@ cd Deep3DFaceReconstruction
 
 3. Download the Expression Basis provided by [Guo et al.](https://github.com/Juyong/3DFace) You can find a link named "CoarseData" in the first row of Introduction part in their repository. Download and unzip the Coarse_Dataset.zip. Put "[Exp_Pca.bin](https://drive.google.com/file/d/11rLZjvITbP5ft-RpbWEKbMW2aDq1yBFn/view?usp=sharing)" into ./BFM subfolder. The expression basis are constructed using [Facewarehouse](kunzhou.net/zjugaps/facewarehouse/) data and transferred to BFM topology.
 
-4. Download the trained [reconstruction network](https://drive.google.com/file/d/176LCdUDxAj7T2awQ5knPMPawq5Q2RUWM/view?usp=sharing), unzip it and put "FaceReconModel.pb" into ./network subfolder.
+4. Put the compiled (rasterize_triangles_kernel.so)[https://drive.google.com/file/d/1VUtJPdg0UiJkKWxkACs8ZTf5L7Y4P9Wj/view?usp=sharing] into ./renderer folder.
 
-5. Run the demo code.
+5. Download the trained [reconstruction network](https://drive.google.com/file/d/176LCdUDxAj7T2awQ5knPMPawq5Q2RUWM/view?usp=sharing), unzip it and put "(FaceReconModel.pb)[https://drive.google.com/file/d/17xVNS1PKIAaI6mXM895QXHL7BzXN-QVW/view?usp=sharing]" into ./network subfolder.
+
+6. Run the demo code.
 
 ```
 python demo.py
 ```
 
-6. ./input subfolder contains several test images and ./output subfolder stores their reconstruction results. For each input test image, two output files can be obtained after running the demo code:
+7. ./input subfolder contains several test images and ./output subfolder stores their reconstruction results. For each input test image, two output files can be obtained after running the demo code:
 	- "xxx.mat" : 
 		- cropped_img: an RGB image after alignment, which is the input to the R-Net
 		- recon_img: an RGBA reconstruction image aligned with the input image.
