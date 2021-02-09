@@ -81,9 +81,9 @@ cd Deep3DFaceReconstruction
 
 3. Download the Expression Basis provided by [Guo et al.](https://github.com/Juyong/3DFace) You can find a link named "CoarseData" in the first row of Introduction part in their repository. Download and unzip the Coarse_Dataset.zip. Put "[Exp_Pca.bin](https://drive.google.com/file/d/11rLZjvITbP5ft-RpbWEKbMW2aDq1yBFn/view?usp=sharing)" into ./BFM subfolder. The expression basis are constructed using [Facewarehouse](kunzhou.net/zjugaps/facewarehouse/) data and transferred to BFM topology.
 
-4. Put the compiled (rasterize_triangles_kernel.so)[https://drive.google.com/file/d/1VUtJPdg0UiJkKWxkACs8ZTf5L7Y4P9Wj/view?usp=sharing] into ./renderer folder.
+4. Put the compiled [rasterize_triangles_kernel.so](https://drive.google.com/file/d/1VUtJPdg0UiJkKWxkACs8ZTf5L7Y4P9Wj/view?usp=sharing) into ./renderer folder.
 
-5. Download the trained [reconstruction network](https://drive.google.com/file/d/176LCdUDxAj7T2awQ5knPMPawq5Q2RUWM/view?usp=sharing), unzip it and put "(FaceReconModel.pb)[https://drive.google.com/file/d/17xVNS1PKIAaI6mXM895QXHL7BzXN-QVW/view?usp=sharing]" into ./network subfolder.
+5. Download the trained [reconstruction network](https://drive.google.com/file/d/176LCdUDxAj7T2awQ5knPMPawq5Q2RUWM/view?usp=sharing), unzip it and put [FaceReconModel.pb](https://drive.google.com/file/d/17xVNS1PKIAaI6mXM895QXHL7BzXN-QVW/view?usp=sharing) into ./network subfolder.
 
 6. Run the demo code.
 
